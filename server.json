@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/listenbrainz",
   "title": "Listenbrainz",
   "description": "ListenBrainz MCP.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/listenbrainz",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-listenbrainz",
