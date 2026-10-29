@@ -1,0 +1,79 @@
+[
+  {
+    "name": "top_artists",
+    "description": "ListenBrainz sitewide top artists (open music listening data, MetaBrainz/MusicBrainz-linked). Most-listened artists across all users for a time range. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "range": {
+          "type": "string",
+          "description": "Time range: week, month, year, or all_time (default \"week\")."
+        },
+        "count": {
+          "type": "number",
+          "description": "How many artists to return (default 25, max 100)."
+        }
+      }
+    }
+  },
+  {
+    "name": "user_listens",
+    "description": "A SPECIFIC NAMED ListenBrainz user's recent listens (track scrobbles), newest first — only when the question names a username; never with a guessed or example one. Open music listening data, MusicBrainz-linked. Keyless for public profiles.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "ListenBrainz username, e.g. \"rob\"."
+        },
+        "count": {
+          "type": "number",
+          "description": "How many listens to return (default 25, max 100)."
+        }
+      },
+      "required": [
+        "username"
+      ]
+    }
+  },
+  {
+    "name": "now_playing",
+    "description": "What a ListenBrainz user is listening to right now (the currently-playing track, if any). Open music listening data. Keyless for public profiles.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "ListenBrainz username, e.g. \"rob\"."
+        }
+      },
+      "required": [
+        "username"
+      ]
+    }
+  },
+  {
+    "name": "user_top_artists",
+    "description": "A SPECIFIC NAMED ListenBrainz user's top (most-listened) artists for a time range — only when the question names a ListenBrainz username. NEVER for general questions like \"recommend popular music\" or \"top songs 2026\" (use last-fm chart_top_artists / tag_top_artists for those), and never with a guessed or example username — the result would be a stranger's personal listening history presented as an answer. Open music listening data, MusicBrainz-linked. Keyless for public profiles.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "ListenBrainz username, e.g. \"rob\"."
+        },
+        "range": {
+          "type": "string",
+          "description": "Time range: week, month, year, or all_time (default \"all_time\")."
+        },
+        "count": {
+          "type": "number",
+          "description": "How many artists to return (default 25)."
+        }
+      },
+      "required": [
+        "username"
+      ]
+    }
+  }
+]
