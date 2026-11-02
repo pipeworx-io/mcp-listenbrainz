@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-listenbrainz",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ListenBrainz MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "listenbrainz",
     "gatewaySlug": "listenbrainz",
-    "sourceHash": "v1-ad41859ede5d57608be36d95a4c58701d65675a18a60fbb66fdcdd01024934f5",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-83537ef81c65e4fe6669f581498a8b11f175a022cd5cb09233788dc8b17bf774",
+    "sourceCommit": "236b0a46d91f343fe094da9f499c378e88f78312"
   }
 }
